@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painting</title>
+    <link rel="stylesheet" href="paintingopen.css">
+</head>
+<body>
+    <a href="#" onclick="toggleSafePopup()">
+        <img id="safe" class="safe" src="SAFECLOSEUP.png" alt="safe">
+    </a>
+
+    <div class="container" id="blurSafe"></div>
+
+    <div id="popupSafe" class="popup">
+        <h2 id="SafeTitle">There is a key</h2>
+        <p>Take twice of a number, then decrease it by one, get the product of the result and itself, then get the quotient of the result and three, and finally add one. </p><br>
+
+        <label>Answer:</label>
+        <input type="text" id="SafeText" placeholder="Enter answer"><br><br>
+        <div id="SafeResult"></div><br> 
+
+        <button onclick="checkSafeCode()">Submit</button><br><br>
+        <button class="btn2" onclick="toggleSafePopup()">Close</button> 
+    </div>
+    
+    <div class="text-center">
+        <button class="btn"><a href="http://127.0.0.1:5500/safedoor.html#">Back</a></button>
+    </div>
+
+    <script src="paintingopen.js"></script>
+</body>
+</html>

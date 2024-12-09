@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Introduction
+    </title>
+    <link rel="stylesheet" href="Epilogue1.css">
+</head>
+<body>
+    <div class="fade">
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <pre>
+After solving the mansion’s final, most intricate puzzle, a hidden door 
+creaks open, revealing a dazzling chamber filled with gold coins, glittering jewels, 
+and ancient artifacts. Among the treasures, you find a weathered journal 
+resting atop a chest. The journal, written by the mansion’s original owner, 
+details his life’s work: a collection of puzzles and riddles meant to guard not 
+just his wealth but also his greatest treasures.
+
+As you marvel at your discovery, the journal reveals one last cryptic message:
+"To claim your reward, you must leave with only what you can carry. Choose 
+wisely, adventurer, for greed leads to ruin, and humility reveals the greatest 
+treasure of all."
+                        
+The room begins to rumble, urging you to make a decision. Do you risk taking it 
+all, or honor the merchant’s final lesson?
+                    </pre>
+                </div>
+            </div>
+        </section>
+        </div>
+    <div class="text-center">
+    <button class="btn"><a href="http://127.0.0.1:5500/Epilogue2.html" style="color: rgb(178, 25, 25);">>>></a></button>
+    </div>
+
+    <script>
+       window.addEventListener("load", () => {
+    const button = document.querySelector(".text-center");
+    const container = document.querySelector(".container");
+    const animationDuration = 17000; 
+
+    setTimeout(() => {
+        button.classList.add("visible");
+
+        container.classList.add("stationary");
+    }, animationDuration);
+    }
+        );
+
+    </script>
+</body>
+</html>

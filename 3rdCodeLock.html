@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painting</title>
+    <link rel="stylesheet" href="3rdCodeLock.css">
+</head>
+<body>
+    <a href="#" id="PaintingLink" onclick="toggleQuestionPopup()">
+        <img id="code" class="code" src="CloseCodeLock.png" alt="code">
+    </a>
+
+    <div class="container" id="blurQuestion"></div>
+
+    <div id="popupQuestion" class="popup">
+        <h3 id="questionTitle">Answer the Riddle</h3>
+        <label>Answer:</label>
+        <input type="text" id="noteText" placeholder="Enter answer"><br><br>
+        <div id="noteResult"></div><br>
+        <button onclick="checkQuestionCode()">Submit</button><br><br>
+        <button class="btn2" onclick="toggleQuestionPopup()">Close</button> 
+    </div>
+
+    <div class="container" id="blurSafe"></div>
+
+    <script src="3rdCodeLock.js"></script>
+</body>
+</html>

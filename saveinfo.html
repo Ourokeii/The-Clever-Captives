@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="saveinfo.css">
+</head>
+<body>
+            <a href="#" onclick="toggle()">
+            <img src="door.png" alt="door">
+            </a>
+
+            <div class="container" id="blur"></div>
+
+            <div id="popup">
+
+                <pre>
+                 <h1 id="myh1">The Door is locked!</h1>
+                
+                <label>Enter Passcode:</label><br>
+                <input type="text" id="myText" placeholder="Enter name"><br><br>
+                <button onclick="displayOutput()">Submit</button>
+                
+                <div id="result"></div>    
+                </pre>
+
+              <button class="btn2" onclick="toggle()"><a href="#">Close</a></button> 
+            
+            </div>
+            <script type="text/javascript">
+                function toggle(){
+                    var blur = document.getElementById('blur');
+                    blur.classList.toggle('active');
+                    var popup = document.getElementById('popup');
+                    popup.classList.toggle('active');
+                }
+            </script>
+
+    <script src="saveinfo.js"></script>
+</body>
+</html>

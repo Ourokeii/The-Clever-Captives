@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painting</title>
+    <link rel="stylesheet" href="painting.css">
+</head>
+<body>
+    <a href="#" onclick="togglePaintingPopup()">
+        <img id="Painting" class="Painting" src="paintingOne.png" alt="Painting">
+    </a>
+    <div class="container" id="blurPainting"></div>
+  
+    <div id="popupPainting1" class="popup">
+        <h2>There is something wrong with the painting</h2>
+        <button class="btn2" onclick="closeFirstPopup()">Close</button>
+    </div>
+
+    <div id="popupPainting2" class="popup">
+        <h2>Something is behind it.</h2>
+        <button class="btn2" onclick="closeSecondPopup()">Close</button>
+    </div>
+
+    <script src="paintingclose.js"></script>
+</body>
+</html>

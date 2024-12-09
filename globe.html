@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>The First Door</title>
+    <link rel="stylesheet" href="globe.css">
+</head>
+<body>
+
+    <a href="#" onclick="toggleDoorPopup()">
+        <img id="door" class = "door" src="door.png" alt="door">
+        </a>
+
+        <div class="container" id="blurDoor"></div>
+        <div id="popupDoor" class="popup">
+
+             <h1 id="doorTitle">The Door is locked!</h1>
+            
+            <label>Enter Passcode:</label><br>
+            <input type="text" id="doorText" placeholder="Enter passcode"><br><br>
+            <div id="doorResult"></div><br>
+            <button onclick="checkDoorCode()">Submit</button> 
+            <br><br>
+          <button class="btn2" onclick="toggleDoorPopup()">Close</button> 
+        
+        </div>
+
+
+        <a href="http://127.0.0.1:5500/CloseupGlobe.html#" >
+            <img id= "globe" class="globe" src="globe.png" alt="globe">
+            </a>
+        
+            <a href="http://127.0.0.1:5500/Paintingclose.html" >
+            <img id= "painting" class="painting" src="painting.png" alt="painting">
+            </a>
+
+            <a href="http://127.0.0.1:5500/CloseupNote.html" >
+                <img id= "note" class="note" src="notes.png" alt="note">
+                </a>
+    
+                <a href="http://127.0.0.1:5500/CloseupPlant.html#" >
+                    <img id= "plant" class="plant" src="theplant.png" alt="plant">
+                    </a>
+
+            <audio id="bgMusic" src="Horror Ambiance.mp3" loop autoplay></audio>
+            
+        <script src="globe.js"></script>
+
+</body>
+</html>

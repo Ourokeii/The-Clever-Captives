@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painting</title>
+    <link rel="stylesheet" href="CloseupNote.css">
+</head>
+<body>
+   
+    <a href="#" id="PaintingLink" onclick="togglePaintingPopup()">
+        <img id="Painting" class="Painting" src="CloseNoteFront.png" alt="Painting">
+    </a>
+    
+    <div class="container" id="blurPainting"></div>
+ 
+    <div id="popupPainting1" class="popup">
+        <h2>There is something in the back.</h2>
+        <button class="btn2" onclick="closeFirstPopup()">Close</button>
+    </div>
+    
+    <div class="container" id="blurNote"></div>
+    
+    <div id="popupNote" class="popup">
+        <h2 id="noteTitle">What is the next number in this sequence?</h2>
+        <label>Answer:</label>
+        <input type="text" id="noteText" placeholder="Enter answer"><br><br>
+        <h2><div id="noteResult"></div></h2><br>
+        <button onclick="checkNoteCode()">Submit</button>
+        <br><br>
+        <button class="btn2" onclick="toggleNotePopup()">Close</button>
+    </div>
+    
+    <script src="CloseupNote.js"></script>
+</body>
+</html>

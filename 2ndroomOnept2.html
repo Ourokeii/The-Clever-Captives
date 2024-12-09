@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>The Second Door</title>
+    <link rel="stylesheet" href="2ndroom.css">
+</head>
+<body>
+
+    <a href="#" onclick="toggleDoorPopup()">
+        <img id="door" class = "door" src="2ndroomDoor.png" alt="door">
+        </a>
+
+        <div class="container" id="blurDoor"></div>
+        <div id="popupDoor" class="popup">
+
+             <h1 id="doorTitle">The Door is locked!</h1>
+            
+            <label>Enter Passcode:</label><br>
+            <input type="text" id="doorText" placeholder="Enter passcode"><br><br>
+            <div id="doorResult"></div><br>
+            <button onclick="checkDoorCode()">Submit</button> 
+            <br><br>
+          <button class="btn2" onclick="toggleDoorPopup()">Close</button> 
+        
+        </div>
+
+        <a href="http://127.0.0.1:5500/bookshelfpt2.html" >
+            <img id= "shelf" class="shelf" src="bookshelf.png" alt="shelf">
+            </a>
+        
+            <a href="http://127.0.0.1:5500/2ndroomTwopt2.html" >
+            <img id= "arrow" class="arrow" src="arrowright.png" alt="arrow">
+            </a>
+            
+            
+        <script src="2ndroom.js"></script>
+
+</body>
+</html>

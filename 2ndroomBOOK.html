@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="2ndroomBOOK.css">
+</head>
+<body>
+
+    <!-- Trigger for Safe Popup -->
+    <a href="#" onclick="toggleSafePopup()">
+        <img id="text" class="text" src="smallquestion.png" alt="text">
+    </a>
+    
+    <div class="container" id="blurSafe"></div>
+
+    <div id="popupSafe" class="popup">
+        <h2 id="SafeTitle">You use the magnifying glass!</h2>
+        <button class="btn2" onclick="toggleSafePopup()">Close</button> 
+    </div>
+
+    <!-- Trigger for Question Popup -->
+    <a href="#" onclick="toggleQuestionPopup()">
+        <img id="question" class="question" src="bookquestion.png" alt="question" style="display: none;">
+    </a>
+
+    <div class="container" id="blurQuestion"></div>
+
+    <div id="popupQuestion" class="popup">
+        <h3 id="questionTitle">Im the tool that makes math shine, Helping you solve with a reasoning line. Equations and proofs, I help decode, What guides the steps down this thoughtful road?</h3>
+        <label>Answer:</label>
+        <input type="text" id="noteText" placeholder="Enter answer"><br><br>
+        <div id="noteResult"></div><br>
+        <button onclick="checkQuestionCode()">Submit</button><br><br>
+        <button class="btn2" onclick="toggleQuestionPopup()">Close</button> 
+    </div>
+    
+    <div class="text-center">
+        <button id="backButton" class="btn" style="visibility: hidden;">
+            <a href="http://127.0.0.1:5500/3rmTwoLF.html">Back</a>
+        </button>
+    </div>
+
+    <script src="2ndroomBOOK.js"></script>
+</body>
+</html>

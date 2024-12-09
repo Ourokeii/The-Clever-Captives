@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Introduction
+    </title>
+    <link rel="stylesheet" href="style4p2.css">
+</head>
+<body>
+    <div class="fade">
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <pre>
+In the quiet town of Eldridge Hollow, whispers of an abandoned house on the 
+outskirts have stirred the curiosity of many. The locals tell tales of a crumbling 
+mansion, long forgotten by time, rumored to hold untold treasures hidden 
+within its dusty walls. Legends say that a wealthy merchant once resided 
+there, his fortune amassed from rare artifacts and gold coins. However, it’s not 
+just the allure of riches that keeps townsfolk at bay.
+            
+The house is shrouded in mystery, and those who dare approach speak of 
+intricate riddles and treacherous puzzles that guard the wealth inside. Many 
+have attempted to unravel its secrets, but the house has claimed their 
+courage, leaving them disoriented and defeated. Now, it sits silently, 
+beckoning for someone brave enough to enter its shadowy corridors.
+            
+You’ve heard these stories, and the thrill of adventure ignites a fire within you. 
+Armed with a keen mind and an insatiable curiosity, you decide to uncover the 
+truth behind the mansion's treasures. With each step toward the threshold, the 
+weight of the unknown settles upon you. Can you solve the riddles and escape 
+with the fortune, or will you become just another name in the town’s haunting 
+tales?
+                    </pre>
+                </div>
+            </div>
+        </section>
+        </div>
+    <div class="text-center">
+    <button class="btn"><a href="http://127.0.0.1:5500/globe.html#" style="color: rgb(178, 25, 25);">>>></a></button>
+    </div>
+    <!-- Button click sound -->
+    <audio id="buttonSound" src="DoorCreak.mp3"></audio>
+
+    <script>
+       window.addEventListener("load", () => {
+    const button = document.querySelector(".text-center");
+    const container = document.querySelector(".container");
+    const animationDuration = 55000; 
+
+    setTimeout(() => {
+        button.classList.add("visible");
+
+        container.classList.add("stationary");
+    }, animationDuration);
+    }
+        );
+
+    </script>
+</body>
+</html>

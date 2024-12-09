@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Painting</title>
+    <link rel="stylesheet" href="DrawerLockOne.css">
+</head>
+<body>
+    <a href="#" id="PaintingLink" onclick="toggleFirstPopup()">
+        <img id="code" class="code" src="CloseLockDrawer.png" alt="code">
+    </a>
+
+    <div class="container" id="blursafe"></div>
+
+    <div id="popupSafe1" class="popup">
+        <h2>You use a key.</h2>
+        <button class="btn2" onclick="toggleFirstPopup()">Open</button>
+    </div>
+
+    <div id="popupSafe2" class="popup hidden">
+        <h2>Its a magnifying glass.</h2>
+        <button class="btn2" onclick="toggleSecondPopup()">Take</button>
+    </div>
+
+    <div id="backButtonContainer">
+        <button class="btn2" onclick="goBack()">BACK</button>
+    </div>
+
+    <script src="3rmDrawer.js"></script>
+</body>
+</html>
