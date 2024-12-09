@@ -1,0 +1,48 @@
+body{
+    background-image: url(bg2.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background:rgba(247, 232, 232, 0.562);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.btn2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: .5em .5em;
+    color: white;
+    background-color: rgb(204, 82, 82);
+    border: 3px solid rgb(158, 14, 14);
+    border-radius: 2px;
+
+    transition: transform 0.4s, background-color 0.3s, color 0.3s;
+}
+img{
+    width: 410px;
+    height: 490px;
+    position: absolute;
+    top: 400px;
+    left: 410px;
+}

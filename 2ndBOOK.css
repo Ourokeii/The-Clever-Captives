@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(TheBook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 262px;
+    left: 370px;
+}
+
+.popup {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.popup.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.container {
+    display: none;
+}
+
+.container.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(68, 66, 66, 0.253);
+    z-index: 500;
+}
+
+.btn2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0.5em 0.5em;
+    color: white;
+    background-color: rgb(204, 82, 82);
+    border: 3px solid rgb(158, 14, 14);
+    border-radius: 2px;
+    transition: transform 0.4s, background-color 0.3s, color 0.3s;
+}
+
+.btn2:hover {
+    transform: scale(1.1);
+    background-color: rgb(158, 14, 14);
+    color: white;
+}
+
+.btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 0.2em 0.3em;
+    color: white;
+    background-color: rgba(204, 82, 82, 0.426);
+    border: 2px solid rgb(129, 39, 39);
+    border-radius: 2px;
+    transition: transform 0.4s, background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(158, 14, 14, 0.464);
+    color: white;
+}
+
+a {
+    color: rgba(235, 30, 30, 0.852);
+    text-decoration: none;
+}
